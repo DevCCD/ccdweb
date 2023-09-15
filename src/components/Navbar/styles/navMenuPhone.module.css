@@ -1,0 +1,257 @@
+.container {
+	position: relative;
+	display: grid;
+	width: 100%;
+	min-width: 100vw;
+	height: 100%;
+	/* flex-wrap: nowrap; */
+}
+
+.slide {
+	/* background-color: aqua; */
+	position: relative;
+	/* min-width: 100%; */
+}
+
+.space {
+	position: relative;
+	width: 100%;
+	height: 20px;
+	/* background-color: peru; */
+}
+
+.header {
+	position: sticky;
+	top: 0;
+	/* background-color: bisque; */
+	/* z-index: 1; */
+}
+
+.header_wrapper {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.5rem 1rem;
+}
+
+.backbtn {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+}
+
+.backbtn:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header_wrapper h2 {
+	font-size: 1.75rem;
+	margin-bottom: 0;
+}
+
+.keloke {
+	width: 100%;
+	height: 1rem;
+	/* background-color: brown; */
+	clip-path: inset(0 0 0 0 round 1rem 1rem 0 0);
+	filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5));
+}
+/* .wrapper {
+	margin-right: auto;
+	margin-left: auto;
+	width: calc(100% - 1.5rem);
+	height: calc(100% - 1rem);
+	background-color: aqua;
+	clip-path: inset(0 0 0 0 round 1rem 1rem 0 0);
+	overflow: scroll;
+	padding-bottom: 1rem;
+} */
+
+.wrapper {
+	width: calc(100% - 1.5rem);
+	height: 100%;
+	/* background-color: peru; */
+	position: relative;
+	padding-bottom: 0;
+	margin-right: auto;
+	margin-left: auto;
+
+	overflow-y: scroll;
+	clip-path: inset(0 0 0 0 round 1rem 1rem 0 0);
+}
+
+.wrapper::-webkit-scrollbar {
+	width: 0;
+}
+
+.content {
+	/* clip-path: inset(0 0 0 0 round 1rem 1rem 0 0); */
+	padding-bottom: 1rem;
+}
+
+.cardMenu {
+	display: flex;
+	background-color: var(--overlayGlass);
+	border-radius: 1rem;
+	overflow: hidden;
+	padding: 4px;
+	box-shadow: var(--navBarBoxShadow);
+}
+
+.navmenu {
+	width: 100%;
+}
+
+.navmenu ul,
+.navmenu li {
+	list-style: none;
+	margin: 0;
+}
+
+.item {
+	width: 100%;
+	border-radius: 0.8rem;
+	background-color: transparent;
+	border: none;
+	/* border: none; */
+	cursor: pointer;
+	display: grid;
+	align-items: center;
+	grid-template-columns: auto 1fr;
+	padding: 0 calc(1.1rem - 8px);
+	padding-left: calc(1.1rem - 6px);
+}
+
+.icon {
+	width: 46px;
+	height: 46px;
+	background-color: #f0f2f5;
+	border-radius: 50%;
+}
+
+.item_label {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr auto;
+	padding: 1.35rem 0;
+	border-bottom: 0.5px solid var(--herobottomBorder);
+	gap: 0.5rem;
+}
+
+.item_label h4 {
+	margin: 0;
+	line-height: 1.1;
+	font-size: 1.15rem;
+	font-family: var(--fontFamilyNextUi);
+	font-weight: 500;
+}
+
+.item_info {
+	display: grid;
+	justify-content: flex-start;
+	text-align: start;
+}
+
+.description {
+	margin-top: 5px;
+	font-size: 12px;
+	color: #a0a0a0;
+	font-family: var(--fontFamilyNextUi);
+	line-height: 1.2;
+	/* truncar texto 1 linea */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.arrow_wrap {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.chevron {
+	width: 20px;
+	height: 20px;
+	transform: rotate(-90deg);
+	opacity: 0.45;
+}
+
+.navmenu li:last-child * {
+	border: none;
+}
+
+.ghostText {
+	font-size: 15px;
+	line-height: 1;
+	color: #a0a0a0;
+}
+
+.containerModalito {
+	position: fixed;
+	top: calc(var(--navBarHeight) * -1);
+	left: 0;
+	width: 100%;
+	min-height: -webkit-fill-available;
+	display: flex;
+	justify-content: center;
+}
+
+.overlayModalito {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--overlayModalito);
+	z-index: 999;
+}
+
+.modalito_container {
+	display: flex;
+	position: absolute;
+	z-index: 1000;
+	bottom: 1rem;
+	width: 100%;
+	max-width: calc(100% - 1.5rem);
+}
+
+.modalito {
+	width: 100%;
+	background-color: blueviolet;
+	background-color: var(--lineSvgInterior);
+	border-radius: 1.25rem 1.25rem 1rem 1rem;
+	padding: 8px;
+	box-shadow: var(--navBarBoxShadow);
+}
+
+.modalito_header {
+	padding: 0 calc(1.1rem - 8px);
+	padding-left: calc(1.1rem - 6px);
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.modalito_titulo {
+	font-size: 22px;
+	font-weight: 600;
+	/* font-family: var(--fontFamilyNextUi); */
+	margin-bottom: 0;
+}
+
+.btnCancelarModalito {
+	width: 100%;
+	margin-bottom: 0.25rem;
+	margin-top: 0.5rem;
+}
+
+/* .modalito_body {
+	display: grid;
+} */

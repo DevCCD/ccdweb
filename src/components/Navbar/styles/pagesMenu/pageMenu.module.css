@@ -1,0 +1,36 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.linkItem {
+	width: 100%;
+	padding: 10px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	border-radius: 8px;
+	position: relative;
+	display: flex;
+	cursor: pointer;
+}
+
+.linkItem:hover {
+	background-color: var(--backgroundAccent);
+}
+
+.linkItem:hover .title {
+	color: var(--nextui-colors-primary);
+}
+
+.title {
+	font-size: 16px;
+	margin-bottom: 0;
+	font-weight: 500;
+	color: var(--nextui-colors-text);
+}
+
+.description {
+	font-size: 14px;
+	color: var(--textAccents6);
+}

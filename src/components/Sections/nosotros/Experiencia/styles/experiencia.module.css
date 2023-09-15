@@ -1,0 +1,240 @@
+.alcance_subnacional,
+.alcance_internacional {
+	width: 100%;
+	max-width: 350px;
+	/* background-color: aquamarine; */
+}
+
+.alcance_subnacional {
+	width: 100%;
+	max-width: 380px;
+	margin: 0 auto;
+}
+
+.content {
+	display: flex;
+	gap: 3rem;
+	flex-direction: column;
+	gap: 0;
+}
+
+.alcance_internacional {
+	max-width: 100%;
+	padding-top: 2rem;
+}
+
+.asideContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	gap: 1rem;
+	/* max-width: 400px; */
+}
+
+.graphics_data {
+	height: 100%;
+	display: flex;
+	width: 100%;
+}
+
+.dualGrid {
+	display: block;
+}
+
+.wrapper_article article {
+	padding: 70px 0;
+	padding-bottom: 30px;
+}
+
+.wrapper_article article:last-child {
+	margin-bottom: 0;
+}
+
+.wrapper_article article p {
+	line-height: 2rem;
+}
+
+.aside_wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.aside {
+	position: sticky;
+	top: 10px;
+	text-align: end;
+	display: none;
+}
+
+@media (min-width: 980px) {
+	.content {
+		gap: 3rem;
+		flex-direction: row;
+		align-items: center;
+	}
+}
+
+.head_aside {
+	padding-top: 90px;
+	text-align: end;
+	margin-right: 10px;
+}
+
+.body_aside {
+	margin-right: 0;
+}
+.body_aside li {
+	/* background-color: peru; */
+	display: flex;
+	justify-content: flex-end;
+}
+
+.linkAside {
+	font-size: 14px;
+	border-right: 3px solid transparent;
+	color: var(--nextui-colors-gray600);
+	padding: 2px 8px;
+	opacity: 0.8;
+}
+
+.linkAside:hover {
+	color: var(--nextui-colors-gray800);
+	opacity: 1;
+}
+
+/*----------  LEYENDA STYLES  ----------*/
+
+.leyenda {
+	/* max-width: 355px; */
+	margin-bottom: 1.75rem;
+}
+
+.leyenda * {
+	font-family: var(--fontFamily) !important;
+}
+
+.leyenda_title,
+.graphicsData_title {
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin: 1rem 0;
+}
+
+.leyendaHead,
+.leyendaItem {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.leyendaHead {
+	background-color: #202020;
+	padding: 0.5rem 0.75rem;
+	border-radius: 4px;
+	color: var(--invertColor);
+	/* justify-content: center; */
+}
+
+.leyendaBody {
+	display: grid;
+	gap: 0.25rem;
+	margin-top: 0.5rem;
+	/* grid-template-columns: repeat(2, 1fr); */
+}
+
+.leyendaHead p {
+	font-weight: 600;
+	color: var(--invertColor);
+	letter-spacing: 0.0001rem;
+}
+
+.headColor {
+	color: #000;
+	width: 1.5rem;
+	height: 1rem;
+	background-color: var(--primary-color);
+}
+
+.leyendaItem {
+	padding: 0;
+	border: 0;
+	width: 100%;
+	background-color: transparent;
+	cursor: pointer;
+	display: grid;
+	gap: 0.75rem;
+	grid-template-columns: auto 1fr;
+	border-radius: 6px;
+	padding: 4px 1rem;
+}
+.leyendaItem.active {
+	background-color: var(--backgroundAccent);
+}
+.leyendaItem:hover {
+	background-color: var(--backgroundAccent);
+}
+
+.itemColor {
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background-color: var(--primary-color);
+}
+
+.itemText,
+.leyendaText {
+	/* truncar texto en una linea */
+	overflow: hidden;
+	text-align: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.cartel {
+	background-color: var(--backgroundAccent);
+	border-radius: 10px;
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+	gap: 1rem;
+	text-align: center;
+	color: var(--textAccents6);
+}
+
+.cartel_text {
+	max-width: 80%;
+}
+
+@media (min-width: 980px) {
+	.dualGrid {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		gap: 1.25rem;
+	}
+
+	.aside {
+		display: block;
+	}
+	.leyenda {
+		max-width: 355px;
+		margin-bottom: 1.75rem;
+	}
+	.asideContent {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		gap: 1rem;
+		max-width: fit-content;
+	}
+}

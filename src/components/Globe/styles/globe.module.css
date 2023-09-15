@@ -1,0 +1,11 @@
+.globeContainer {
+	--size: 500px;
+	/* background-color: aqua; */
+	width: var(--size);
+	height: var(--size);
+	transition: all 0.25s ease;
+	width: fit-content;
+	height: fit-content;
+	/* max-width: var(--size); */
+	/* max-height: var(--size); */
+}

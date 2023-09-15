@@ -1,0 +1,58 @@
+.heroContainer {
+	background-color: aqua;
+	padding-top: var(--navBarHeight);
+	position: relative;
+}
+.heroContent {
+	position: relative;
+	padding: 4rem 0;
+	/* background-color: blueviolet; */
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 1fr;
+	width: 92%;
+	height: 100%;
+	max-width: var(--maxwidth);
+	gap: 2rem;
+	z-index: 12;
+	margin: 0 auto;
+	color: #fff;
+	/* pointer-events: none; */
+}
+
+.mainContent {
+	pointer-events: all;
+	/* background-color: aqua; */
+	width: 90%;
+}
+
+.title {
+	text-transform: uppercase;
+	font-size: 38px;
+	line-height: 1.25;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+	font-family: var(--fontFamilyNextUi);
+}
+
+.parrafo {
+	font-size: 17px;
+	line-height: 1.45;
+	margin-bottom: 1.5rem;
+}
+
+/* styles nosotros Page */
+
+.headerContainer {
+	margin-top: 56px;
+	width: 92%;
+	max-width: 1000px;
+	text-align: center;
+	/* background-color: aqua; */
+}
+
+.headerContainer .parrafo {
+	max-width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,5 @@
+export { default as NosotrosSection } from './Nosotros'
+export { default as ServiciosSection } from './Servicios'
+export { default as ContactoSection } from './Contacto'
+export { default as TestimonialsSection } from './Testimonials'
+export { default as MapInfoSection } from './MapInfo'

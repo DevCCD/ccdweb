@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+	/*==== fonts ====*/
+	--fontCCD: "Playfair Display", serif;
+	--fontFamily: 'Poppins', sans-serif;
+	--fontFamilyNextUi: var(--nextui-fonts-sans);
+
+	/*==== colors ====*/
+	/* --nextui-colors-primary: #890524; */
+	--nextui-colors-primary: #a1011f;
+	--primary-color: var(--nextui-colors-primary);
+	--shadow-primary: rgba(137, 5, 36, 0.7);
+	--textColor: var(--nextui-colors-text);
+	--textInherit: #11181c;
+	--invertColor: #ECEDEE;
+	
+	--textAccents6: var(--nextui-colors-gray600);
+	--textGradient: linear-gradient(180deg, rgba(0, 0, 0, 0.8), #000);
+
+	--gradientHero: linear-gradient(
+		165deg,
+		rgba(137, 5, 36, 0.25),
+		transparent,
+		transparent 50%,
+		rgba(137, 5, 36, 0.4)
+	);
+
+	/*==== logoColor ====*/
+	--logoColor: var(--nextui-colors-primary);
+
+	/*==== backgroundColor ====*/
+	--backgroundColor: var(--nextui-colors-background);
+	--backgroundAccent: #f0f2f5;
+	--overlayBg: rgba(250, 245, 245, 0.5);
+	--overlayGlass: rgba(255, 255, 255, 0.6);
+	--overlayModalito: rgba(0, 0, 0, 0.475);
+
+	/*==== Navbar ====*/
+	--navBarHeight: 60px;
+	--navBarHeightActive: 60px;
+	--navBarBg: linear-gradient(
+		to bottom,
+		var(--backgroundColor) 0%,
+		rgba(255, 255, 255, 0.7) 60%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	--navbarBgGradient: radial-gradient(
+		circle farthest-corner at top right,
+		var(--backgroundColor) 14%,
+		#ccf2ff 50%,
+		#cce1ff 100%
+	) ;
+	--navBarbgActive: var(--backgroundColor);
+	--navBarBoxShadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.15),
+		rgba(0, 0, 0, 0.035) 0px 1px 2px 0px;
+	--navBarHighlight: rgba(0, 0, 0, 0.05);
+	--themeBtnColor: rgb(110, 110, 110);
+
+	/*==== Hero ====*/
+	--herobottomBackground: #fafafa;
+	--herobottomBorder: #e5e7eb;
+	--map-filter: none;
+
+	--scrollUpBoxShadow: rgba(0, 0, 0, 0.2) 0px 0px 3px 0px,
+		rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+
+	/*==== wrapper ====*/
+	--maxwidth: 1380px;
+
+	--lineSvgExterior: rgba(137, 5, 36, 0.1);
+	--lineSvgInterior: #f5f5f5;
+
+	--sectionBgContrast: #f0f2f5;
+}
+
+.dark-theme {
+	/*==== colors ====*/
+	--nextui-colors-primary: #a1011f;
+	--primary-color: var(--nextui-colors-primary);
+	--textColor: var(--nextui-colors-text);
+	--textGradient: linear-gradient(180deg, #fff, hsla(0, 0%, 100%, 0.75));
+	--invertColor: var(--textColor);
+
+	--gradientHero: linear-gradient(
+		180deg,
+		#161616,
+		transparent,
+		transparent 80%,
+		#0b0b0b
+	);
+
+	/*==== logoColor ====*/
+	--logoColor: #fff;
+
+	/*==== backgroundColor ====*/
+	--backgroundColor: var(--nextui-colors-background);
+	--backgroundAccent: #242424;
+	--overlayBg: rgba(16, 16, 16, 0.5);
+	--overlayGlass: rgba(0, 0, 0, 0.6);
+	--overlayModalito: rgba(0, 0, 0, 0.75);
+
+	/*==== Navbar ====*/
+	--navBarBg: linear-gradient(
+		to bottom,
+		var(--backgroundColor) 0%,
+		rgba(0, 0, 0, 0.7) 60%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	--navBarbgActive: var(--backgroundColor);
+	--navbarBgGradient: radial-gradient(
+		circle farthest-corner at top right,
+		var(--backgroundColor) 14%,
+		#1b1c1c 50%,
+		#323438 100%
+	) ;
+	--navBarBoxShadow: 0 0 0 1px var(--backgroundAccent);
+	--navBarHighlight: rgba(255, 255, 255, 0.125);
+	--themeBtnColor: var(--textColor);
+
+	--scrollUpBoxShadow: var(--navBarBoxShadow)
+
+	/*==== Hero ====*/
+	--map-filter: grayscale(100%);
+	
+	--lineSvgExterior: #0b0b0b;
+	--lineSvgInterior: #242424;
+	
+	--herobottomBackground: #121212 !important;
+	--herobottomBorder: #222;
+
+	/*==== sections ====*/
+	--sectionBgContrast: #161616;
+}
+
+@media (min-width: 768px) {
+	:root,
+	.dark-theme {
+		--navBarHeight: 72px;
+	}
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: var(--fontFamily) !important;
+}
+
+.nextui-c-egxOLa {
+	height: 59px !important;
+	background: transparent !important;
+}
+
+.wrapper {
+	width: 92%;
+	margin: 0 auto;
+}
+
+.wrapper.container {
+	max-width: var(--maxwidth);
+}
+
+#heroSwiper .swiper-wrapper {
+	pointer-events: all;
+}
+
+.section {
+	padding: calc(var(--navBarHeight) * 1.25) 0 calc(var(--navBarHeight) * 0.55)
+		0;
+	/* overflow-x: hidden; */
+}
+
+#contacto {
+	overflow: visible;
+	padding: 0px;
+	overflow-x: hidden;
+	background-color: var(--sectionBgContrast);
+}
+
+#testimonials {
+	background-color: var(--sectionBgContrast);
+	overflow: visible;
+}
+
+#map-contact {
+	position: relative;
+	padding: 0;
+	padding-bottom: 0;
+	background-color: var(--sectionBgContrast);
+}
+
+@media (min-width: 580px) {
+	#map-contact {
+		padding: 20px 0;
+		padding-bottom: 0;
+	}
+	.section {
+		padding: calc(var(--navBarHeight) * 1.25) 0;
+	}
+}
+
+.nextui-c-eXOOPO {
+	border-radius: 8px !important;
+}
+
+.nextui-c-iWjDFM {
+	border-radius: 8px !important;
+}
+
+.prueba {
+	filter: grayscale(100%);
+}
+
+/* maps clases */
+
+/* #mapa {
+	display: none !important;
+} */
+
+/* prueba */
+
+#progress {
+	position: relative;
+	top: 20px;
+	left: 20px;
+	transform: rotate(-90deg);
+}
+
+/* circle {
+	stroke-dashoffset: 0;
+	stroke-width: 15%;
+	fill: none;
+} */
+
+.bg {
+	stroke: var(--accent);
+	opacity: 0.3;
+}
+
+#progress .indicator {
+	stroke: var(--accent);
+}
+
+.activazo {
+	color: var(--primary-color) !important;
+	border: none !important;
+	border-right: 3px solid var(--primary-color) !important;
+}
+
+.imageLoader {
+	width: 150px !important;
+	height: 150px !important;
+}
+
+@media (min-width: 768px) {
+	.imageLoader {
+		width: 160px !important;
+		height: 160px !important;
+	}
+}
+
+/* @media (min-width: 1280px) {
+	.imageLoader {
+		width: 180px !important;
+		height: 180px !important;
+	}
+} */
+
+.nextui-c-fixGjY-jzcjqC-isRow-false .nextui-c-evidrZ:not(:first-child) {
+    margin-top: 0 !important;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+@keyframes spin_reverse {
+	0% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 #b40813;
+	}
+	80% {
+		box-shadow: 0 0 0 64px hsla(0, 0%, 100%, 0);
+	}
+	to {
+		box-shadow: 0 0 0 0 hsla(0, 0%, 100%, 0), 0 0 0 0 hsla(0, 0%, 100%, 0);
+	}
+}

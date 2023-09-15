@@ -1,0 +1,12 @@
+.brand_large {
+	display: none;
+}
+
+@media (min-width: 1080px) {
+	.brand_large {
+		display: block;
+	}
+	.brand {
+		display: none;
+	}
+}

@@ -1,0 +1,48 @@
+/* collpase styles */
+.collapse {
+	width: 100%;
+	overflow: hidden;
+}
+
+.collapseHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 16px;
+	padding: 1rem 1.5rem;
+	position: relative;
+	cursor: pointer;
+	font-weight: 700;
+	user-select: none;
+	width: 100%;
+	border: none;
+	background-color: var(--backgroundColor);
+	overflow: hidden;
+}
+
+.contentWrapper {
+	padding: 1rem 1.5rem;
+}
+
+.trigger {
+	--size: 20px;
+	width: var(--size);
+	height: var(--size);
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bar,
+.bar2 {
+	position: absolute;
+	width: 12px;
+	height: 2px;
+	background-color: var(--textColor);
+	border-radius: 8px;
+}
+
+.bar2 {
+	transform: rotate(90deg);
+}

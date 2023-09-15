@@ -1,0 +1,54 @@
+.tooltip {
+	position: absolute;
+	background-color: var(--overlayGlass);
+	backdrop-filter: saturate(180%) blur(1rem);
+	padding: 5px 1rem;
+	border-radius: 4px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	font-size: 14px;
+	line-height: 1.5;
+	pointer-events: none;
+	z-index: 1000;
+	transform: translate(-50%, -120%);
+	font-weight: 500;
+}
+
+.path:hover {
+	filter: brightness(1.1) saturate(1.1);
+}
+
+.map {
+	position: relative;
+	/* background-color: antiquewhite; */
+}
+
+.containerPoints {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.item {
+	--size: calc(0.5rem + 5vw);
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: var(--size);
+	height: var(--size);
+	max-width: 2rem;
+	max-height: 2rem;
+	top: 20%;
+	left: 45%;
+	/* background-color: green; */
+}
+
+.item .forma {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #fdbe03;
+}

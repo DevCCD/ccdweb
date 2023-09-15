@@ -1,0 +1,185 @@
+.section {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	/* min-height: 370px; */
+	padding: calc(var(--navBarHeight) * 1.5) 0 calc(var(--navBarHeight) * 1.75)
+		0;
+	/* padding-top: calc(var(--navBarHeight) * 1.5); */
+	/* background: url("/assets/images/contacto/bgcontact.jpg") no-repeat; */
+	background: url("https://res.cloudinary.com/dro4ur0kq/image/upload/c_scale,f_auto,q_auto,w_964/v1672336245/ccd-web/contacto/bgcontact_zvf3qt.jpg")
+		no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: var(--primary-color);
+	background-attachment: fixed;
+}
+
+.wrapper {
+	width: 92%;
+	margin: 0 auto;
+	max-width: var(--maxwidth);
+
+	width: 100%;
+	/* margin: 0; */
+}
+
+.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	z-index: 0;
+	opacity: 0.325;
+}
+
+.tabsContainer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: none;
+	display: grid;
+	grid-template-columns: auto auto;
+	width: 100%;
+}
+
+.tab {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 22px 30px;
+	align-items: center;
+	color: #fff;
+	gap: 10px;
+	cursor: pointer;
+	border: none;
+
+	padding: 20px 1rem;
+}
+
+.tab svg {
+	width: 24px;
+	height: 24px;
+
+	width: 20px;
+	height: 20px;
+}
+
+.tab.active {
+	background-color: var(--primary-color);
+}
+
+.tab_text {
+	margin: 0;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.formLayout {
+	background: var(--backgroundColor);
+	box-shadow: 0 5px 83px rgb(40 40 40 / 8%);
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 30px;
+	display: block;
+	margin: 0 auto;
+	padding: 2rem 1.5rem 3rem 1.5rem;
+}
+
+.form {
+	display: grid;
+	row-gap: 30px;
+	height: fit-content;
+	gap: 1.5rem;
+}
+
+.dualGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+
+	gap: 1.5rem;
+}
+
+.submitButton {
+	width: 100%;
+	border-radius: 6px;
+}
+
+@media (min-width: 580px) {
+	.wrapper {
+		width: 92%;
+	}
+	.tabsContainer {
+		transform: translateX(-50%);
+		left: 50%;
+		width: 92%;
+		max-width: var(--maxwidth);
+	}
+}
+
+@media (min-width: 1000px) {
+	.submitButton {
+		width: fit-content;
+	}
+}
+
+/*----------  ASIDE ESTILOS  ----------*/
+
+.asideForm {
+	width: 275px;
+	height: 100%;
+	padding: 1.5rem 2rem 1.5rem 1.5rem;
+	background-color: var(--primary-color);
+	color: #fff;
+	/* border-radius: 6px; */
+	/* margin-top: 54px; */
+	background-image: url("https://res.cloudinary.com/dro4ur0kq/image/upload/f_auto,q_auto/v1672337216/ccd-web/contacto/bgaside_ycfevs");
+	background-size: cover;
+	background-position: 50%;
+	background-repeat: no-repeat;
+
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.formLayout {
+		display: grid;
+		grid-template-columns: 1fr auto;
+	}
+	.asideForm {
+		display: block;
+	}
+}
+
+@media (min-width: 1000px) {
+	.formLayout {
+		padding: 62px 50px 50px;
+	}
+}
+
+.titleAside {
+	font-size: 22px;
+	line-height: 32px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.description {
+	margin-bottom: 24px;
+	font-size: 14px;
+	line-height: 23px;
+}
+
+.melissa_info > * {
+	color: #fff;
+	font-weight: 500;
+}
+
+.formaParte {
+	font-weight: 500;
+}

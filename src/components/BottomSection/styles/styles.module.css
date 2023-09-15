@@ -1,0 +1,25 @@
+.heroFooter {
+	position: relative;
+	z-index: 300;
+	background-color: var(--herobottomBackground);
+	border-top: 1px solid var(--herobottomBorder);
+	border-bottom: 1px solid var(--herobottomBorder);
+	width: 100%;
+	padding: 0 2rem;
+	overflow-x: auto;
+}
+
+.estadisticas {
+	max-width: var(--maxwidth);
+	min-width: 1000px;
+	padding: 0.75rem 0;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+	.estadisticas {
+		padding: 1.25rem 0;
+	}
+}

@@ -1,0 +1,81 @@
+.container {
+	display: grid;
+	width: 100%;
+}
+
+.swiper {
+	display: grid;
+	width: 100%;
+}
+.slidewrapper {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 1rem;
+	align-items: center;
+}
+.slideImagen {
+	--size: 50px;
+	display: flex;
+	width: var(--size);
+	height: var(--size);
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+}
+
+.slideTitle {
+	user-select: none;
+	font-size: 16px;
+	font-weight: 600;
+	/* margin: 0.5rem 0 0.75rem 0; */
+	margin-bottom: 0.4rem;
+}
+
+.slideParrafo {
+	font-size: 14px;
+	font-weight: 400;
+	user-select: none;
+	color: #a4a4a4;
+}
+
+.bulletPagination {
+	display: flex;
+	gap: 0.5rem;
+	margin: 0 auto;
+	margin-top: 0.5rem !important;
+}
+
+@media (min-width: 820px) {
+	.bulletPagination {
+		margin: 0.5rem 1rem 0 auto;
+	}
+}
+
+.bullet,
+.bulletActive {
+	--size: 12px;
+	width: var(--size);
+	height: var(--size);
+	background-color: var(--primary-color);
+	border-radius: 50%;
+	border: none;
+	padding: 0 !important;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.bulletSpan {
+	width: 100%;
+	height: 100%;
+	background-color: #ccced3;
+	/* transition: transform 0.25s ease; */
+}
+
+.bulletActive .bulletSpan {
+	border-radius: 50%;
+	transform: scale(0.5);
+	background-color: var(--backgroundAccent);
+}

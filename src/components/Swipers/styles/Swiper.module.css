@@ -1,0 +1,40 @@
+.homeSwiper {
+	width: 100%;
+	height: 100%;
+	background-color: #f7f8f9;
+}
+
+.imagen {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	object-fit: cover;
+	object-position: center;
+	filter: saturate(1.25);
+}
+/*----------  HEROCARD STYLES  ----------*/
+.heroSwiperCards_container {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	height: 510px;
+	/* background-color: #3095fb; */
+}
+
+.heroSwiperCards {
+	width: 100%;
+	/* max-width: 500px; */
+	height: 100%;
+	overflow: visible;
+}
+
+.sliderHeroCards {
+	position: relative;
+	background-color: var(--backgroundColor);
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+	color: #000;
+	/* width: 100%; */
+}
