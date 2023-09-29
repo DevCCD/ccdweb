@@ -4,12 +4,18 @@ import PlayIcon from "../components/Icons/Interface/PlayIcon"
 import LinkedinIcon from "../components/Icons/LinkedinIcon"
 import WhatsAppIcon from "../components/Icons/WhatsAppIcon"
 import YoutubeIcon from "../components/Icons/YoutubeIcon"
+import TwitterIcon from "../components/Icons/TwitterIcon"
+import InstagramIcon from "../components/Icons/InstragramIcon"
+import PhoneIcon from "../components/Icons/PhoneIcon"
 
 export const contactNumber = 922753771
 export const emailUrl = 'melissa.sanchez@competitividadccd.com'
 export const linkedinUrl = 'https://www.linkedin.com/company/ccdcompetitividad/'
 export const facebookUrl = 'https://www.facebook.com/profile.php?id=100063956947676'
 export const youtubeUrl = 'https://www.youtube.com/@ccdcompetitividad'
+export const twitterUrl = 'https://twitter.com/ccd_lima'
+export const instagramUrl = 'https://instagram.com/'
+export const phoneUrl = 922753771
 
 export const socials = [
     {
@@ -38,10 +44,28 @@ export const socials = [
     },
     {
         id: 5,
+        icon: <PhoneIcon />,
+        url: `tel:${phoneUrl}`,
+        description: 'Phone'
+    },
+    {
+        id: 6,
         icon: <YoutubeIcon />,
         url: youtubeUrl,
         description: 'YouTube'
-    }
+    },
+    {
+        id: 7,
+        icon: <TwitterIcon />,
+        url: twitterUrl,
+        description: 'Twitter'
+    },
+    {
+        id: 8,
+        icon: <InstagramIcon />,
+        url: instagramUrl,
+        description: 'Instagram'
+    },
 ]
 
 export const people = [

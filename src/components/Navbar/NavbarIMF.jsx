@@ -19,6 +19,7 @@ import { activeNavAtom } from "../../atoms/navbarAtom";
 import { ChevronDownIcon } from "../Icons/icons";
 import { socials } from "../../data";
 import { SearchIcon } from "../Icons/Interface";
+import TresdPageMenu from "./pagesMenu/TresdPageMenu";
 
 const NavbarIMF = ({ isTablet }) => {
 	const { theme, setTheme } = useNextTheme();
@@ -110,6 +111,13 @@ const NavbarIMF = ({ isTablet }) => {
 				handleSlide("/servicios", <ServicePageMenu idioma={idioma} />),
 			onmouseleave: () => handleLeave(),
 		},
+/* 		{
+			name: idioma === "es" ? "3D" : "3D",
+			url: "/tresd",
+			onMouseEnter: () =>
+				handleSlide("/tresd", <TresdPageMenu idioma={idioma} />),
+			onmouseleave: () => handleLeave(),
+		}, */
 	];
 
 	// ya sabes mano esta parte es esencial para el ejemplo
@@ -162,9 +170,9 @@ const NavbarIMF = ({ isTablet }) => {
 								)}
 							</button>
 							<SelectIdioma />
-							<button className={css.btnNav}>
+							{/* <button className={css.btnNav}>
 								<SearchIcon fill={"currentColor"} size={18} />
-							</button>
+							</button> */}
 						</div>
 					</div>
 				</div>
@@ -240,6 +248,18 @@ const NavbarIMF = ({ isTablet }) => {
 								<li className={css.navItem}>
 									<div
 										onClick={() => {
+											handleScroll("midesarrollo");
+										}}
+										className={css.navLink}
+									>
+										{idioma === "es"
+											? "MiDesarrollo"
+											: "MyDevelopment"}
+									</div>
+								</li>
+								<li className={css.navItem}>
+									<div
+										onClick={() => {
 											handleScroll("contacto");
 										}}
 										className={css.navLink}
@@ -277,12 +297,12 @@ const NavbarIMF = ({ isTablet }) => {
 											)}
 										</button>
 										<SelectIdioma />
-										<button className={css.btnNav}>
+										{/* <button className={css.btnNav}>
 											<SearchIcon
 												fill={"currentColor"}
 												size={18}
 											/>
-										</button>
+										</button> */}
 									</motion.div>
 								)}
 							</AnimatePresence>

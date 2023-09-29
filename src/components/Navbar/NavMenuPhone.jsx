@@ -55,6 +55,15 @@ const NavMenuPhone = ({ idioma, handleScroll }) => {
 				/>
 			),
 		},
+		{
+			component: (
+				<ServicePageMenuPhone
+					title={idioma === "es" ? "Mi Desarrollo" : "My Development"}
+					idioma={idioma}
+					setIndexSlide={setIndexSlide}
+				/>
+			),
+		},
 	];
 
 	return <>{routeSlide[indexSlide].component}</>;
