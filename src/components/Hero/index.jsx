@@ -58,19 +58,6 @@ const HeroBanner = ({ idioma }) => {
 								: "We promote sustainable development based on the principle of competitiveness with the aim of improving the quality of life of citizens."}
 						</Text>
 						<div className={styles.buttons}>
-							<Button
-								as={"a"}
-								size={"lg"}
-								color={"primary"}
-								auto
-								href={`tel:+51${contactNumber}`}
-							>
-								<PhoneIconFill
-									size={16}
-									style={{ marginRight: ".5rem" }}
-								/>
-								{idioma === "es" ? "Contáctanos" : "Contact us"}
-							</Button>
 							<motion.button
 								whileTap={{ scale: 0.94 }}
 								className={styles.buttonModal}
@@ -84,6 +71,19 @@ const HeroBanner = ({ idioma }) => {
 									? "Conócenos más"
 									: "Know us more"}
 							</motion.button>
+							<Button
+								as={"a"}
+								size={"lg"}
+								color={"primary"}
+								auto
+								href={`tel:+51${contactNumber}`}
+							>
+								<PhoneIconFill
+									size={16}
+									style={{ marginRight: ".5rem" }}
+								/>
+								{idioma === "es" ? "Contáctanos" : "Contact us"}
+							</Button>
 						</div>
 					</motion.div>
 					{lgScren && <GlobeLarge />}

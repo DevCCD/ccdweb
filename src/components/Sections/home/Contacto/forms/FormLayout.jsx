@@ -17,13 +17,13 @@ const FormLayout = ({ children, idioma }) => {
 			>
 				<h3 className={styles.titleAside}>
 					{idioma === "es"
-						? "Creemos en el poder de la comunicación!"
-						: "We believe in the power of communication!"}
+						? "¡Creemos en tu potencial, experiencia y habilidades blandas!"
+						: "We believe in your potential, experience and soft skills!"}
 				</h3>
 				<p className={styles.description}>
 					{idioma === "es"
-						? "En Centro para la Competitividad y el Desarrollo (CCD) brindamos asesoría en procesos públicos, gestiones sociales y más. "
-						: "At Centro para la Competitividad y el Desarrollo (CCD) we provide advice on public processes, social management and more."}
+						? "Se parte de la institución líder del país en competitividad, con más de una década impulsando el desarrollo nacional, regional, provincial, distrital y comunal. "
+						: "Be part of the leading institution in competitiveness in the country, with more than a decade promoting national, regional, provincial, district and communal development."}
 				</p>
 				<p className={styles.description}>
 					Avenida Felipe Pardo y Aliaga
