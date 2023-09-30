@@ -25,7 +25,7 @@
         .midbar {
             position: relative;
             display: flex;
-            justify-content: space-between;
+            align-items: center;
             .left {
                 .socials {
                     display: flex;
@@ -59,10 +59,14 @@
             }
             .right {
                 display: flex;
-                justify-content: flex-end;
+                position: absolute;
                 align-items: center;
-                height: 100%;
-                position: relative;
+                right: 0;
+            }
+            .center {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
             }
         }
     }
