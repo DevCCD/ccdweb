@@ -27,7 +27,7 @@ class MyDocument extends Document {
 					/>
 					{CssBaseline.flush()}
 				</Head>
-				<body id='__almeyda'>
+				<body id='__ccd'>
 					<Main />
 					<NextScript />
 					<div id='ccd-modal'></div>

@@ -37,7 +37,7 @@ const MainLayout = ({ children, title, description }) => {
 			<NavbarIMF {...{ isTablet }} />
 			{/* <BrochureTrigger idioma={idioma} /> */}
 			<BrochurePortal />
-			<main id='__almeyda'>{children}</main>
+			<main id='__ccd'>{children}</main>
 			{/* <SocialFloat /> */}
 			<MapInfoSection idioma={idioma} />
 			<BottomSection idioma={idioma} />
