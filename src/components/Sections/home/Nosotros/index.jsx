@@ -155,8 +155,8 @@ const NosotrosSection = ({ idioma }) => {
 											}}
 										>
 											{idioma === "es"
-												? `En `
-												: `At the `}
+												? `El `
+												: `The `}
 											<Text b>
 												{idioma === "es"
 													? `Centro para la Competitividad y el Desarrollo `
