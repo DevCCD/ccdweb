@@ -103,8 +103,8 @@ const AboutSection = ({ idioma }) => {
 							<br />
 							<br />
 							{idioma === "es"
-								? "El centro para la Competitividad y el Desarrollo nos enfocamos en la prestación de servicios las cuales comprenden los siguientes:"
-								: "The center for Competitiveness and Development focuses on the provision of services which include the following:"}
+								? "Nos enfocamos en la prestación de servicios los cuales comprenden los siguientes:"
+								: "Focuses on the provision of services which include the following:"}
 						</p>
 						<div className={styles.list}>
 							<Description>

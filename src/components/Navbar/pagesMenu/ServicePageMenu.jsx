@@ -70,8 +70,8 @@ const ServicePageMenu = ({ idioma }) => {
 					title={idioma === "es" ? "Inversiones" : "Investments"}
 					description={
 						idioma === "es"
-							? "Público y privados, trabajos por impuestos, Apps. Ips e Inverite.pe."
-							: "Public and private, tax works, Apps. Ips and Inverite.pe."
+							? "Público y privados, trabajos por impuestos, Apps. Ips e Invierte.pe."
+							: "Public and private, tax works, Apps. Ips and Invierte.pe."
 					}
 				/>
 				<LinkCustom

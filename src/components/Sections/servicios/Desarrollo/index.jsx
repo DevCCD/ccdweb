@@ -10,12 +10,12 @@ import styles from "./styles/desarrollo.module.css";
 const DesarrolloSection = ({ idioma }) => {
 	const mainList = [
 		{
-			es: "Propuestas de desarrollo de las comunidades nativas del Bajo Urubambam,Cusco.",
-			en: "Proposals for the development of the native communities of the Bajo Urubambam, Cusco.",
+			es: "Propuestas de desarrollo de las comunidades nativas del Bajo Urubamba ,Cusco.",
+			en: "Proposals for the development of the native communities of the Bajo Urubamba , Cusco.",
 		},
 		{
-			es: "Plan de Desarrollo de Cotabamba y El Progreso - Apurímac.",
-			en: "Development Plan of Cotabamba and El Progreso - Apurímac.",
+			es: "Plan de Desarrollo de Cotabambas y El Progreso - Apurímac.",
+			en: "Development Plan of Cotabambas and El Progreso - Apurímac.",
 		},
 		{
 			es: "Plan de Desarrollo de Megantoni, Cusco.",

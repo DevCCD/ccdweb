@@ -159,8 +159,8 @@ const ServiciosSection = ({ idioma }) => {
 					>
 						<p className={styles.text}>
 							{idioma === "es"
-								? "Público y privados, trabajos por impuestos, Apps. Ips e Inverite.pe. Así como financiamiento e instrumentos de innovación."
-								: "Public and private, tax work, Apps. Ips and Inverite.pe. As well as financing and innovation instruments."}
+								? "Público y privados, trabajos por impuestos, Apps. Ips e Invierte.pe. Así como financiamiento e instrumentos de innovación."
+								: "Public and private, tax work, Apps. Ips and Invierte.pe. As well as financing and innovation instruments."}
 						</p>
 					</Servicio>
 					<Servicio
