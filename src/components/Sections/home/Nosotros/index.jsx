@@ -163,7 +163,7 @@ const NosotrosSection = ({ idioma }) => {
 													: `Center for Competitiveness and Development `}
 											</Text>
 											{idioma === "es"
-												? "(CCD) nos distinguimos por ser una institución en donde tenemos como objetivo promover la competitividad y el desarrollo del país a través del diseño y el apoyo en la implementación y gestión de políticas públicas."
+												? "(CCD) nos distinguimos por ser una institución donde tenemos como objetivo promover la competitividad y el desarrollo del país a través del diseño y el apoyo en la implementación y gestión de políticas públicas."
 												: "(CCD) we stand out for being an institution where our goal is to promote the competitiveness and development of the country through the design and support in the implementation and management of public policies."}
 											<br />
 											{idioma === "es"
