@@ -141,7 +141,7 @@ const AboutSection = ({ idioma }) => {
 						</div>
 					</Servicio>
 				</div>
-				<Text className={styles.text}>
+				<Text>
 					{idioma === "es"
 						? "Disponemos de un equipo conformado por profesionales con larga trayectoria en el sector público y con amplia experiencia en el diseño e implementación de políticas públicas."
 						: "We have a team made up of professionals with a long track record in the public sector and with extensive experience in the design and implementation of public policies."}
