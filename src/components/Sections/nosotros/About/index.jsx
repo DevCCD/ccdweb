@@ -103,7 +103,7 @@ const AboutSection = ({ idioma }) => {
 							<br />
 							<br />
 							{idioma === "es"
-								? "Nos enfocamos en la prestación de servicios los cuales comprenden los siguientes:"
+								? "Nos enfocamos en la prestación de servicios que  comprenden los siguientes :"
 								: "Focuses on the provision of services which include the following:"}
 						</p>
 						<div className={styles.list}>
