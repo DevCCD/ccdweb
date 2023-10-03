@@ -154,9 +154,14 @@ const NosotrosSection = ({ idioma }) => {
 													: "center",
 											}}
 										>
+											<Text b>
+												{idioma === "es"
+													? `Centro para la Competitividad y el Desarrollo `
+													: `Center for Competitiveness and Development `}
+											</Text>
 											{idioma === "es"
-												? "Nos distinguimos por ser una institución donde tenemos como objetivo promover la competitividad y el desarrollo del país a través del diseño y el apoyo en la implementación y gestión de políticas públicas."
-												: "We stand out for being an institution where our goal is to promote the competitiveness and development of the country through the design and support in the implementation and management of public policies."}
+												? "se distingue por ser una institución donde tenemos como objetivo promover la competitividad y el desarrollo del país a través del diseño y el apoyo en la implementación y gestión de políticas públicas."
+												: "stand out for being an institution where our goal is to promote the competitiveness and development of the country through the design and support in the implementation and management of public policies."}
 											<br />
 											{idioma === "es"
 												? "Disponemos de un equipo conformado por profesionales con larga trayectoria en el sector público y con amplia experiencia en el diseño e implementación de políticas públicas."
