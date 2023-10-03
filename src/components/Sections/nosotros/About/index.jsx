@@ -98,7 +98,7 @@ const AboutSection = ({ idioma }) => {
 					>
 						<p>
 							{idioma === "es"
-								? "En Centro para la Competitividad y el Desarrollo (CCD) nos distinguimos por ser una institución donde tenemos como objetivo promover la competitividad y el desarrollo del país a través del diseño y el apoyo en la implementación y gestión de políticas públicas. También trabajamos lo relacionado con la atención de la agenda social, medioambiental y promoción de la inversión privada."
+								? "El Centro para la Competitividad y el Desarrollo, se distingue por ser una institución que tiene como objetivo promover la competitividad y el desarrollo del país a través del diseño diseño y el apoyo en la implementación y gestión de políticas públicas."
 								: "Centro para la Competitividad y el Desarrollo (CCD) distinguishes itself as an institution where our goal is to promote the competitiveness and development of the country through the design and support in the implementation and management of public policies. We also work on issues related to the social agenda, environmental and promotion of private investment."}
 							<br />
 							<br />
