@@ -4,39 +4,41 @@ import styles from "../styles/pagesMenu/pageMenu.module.css";
 import { activeNavAtom } from "../../../atoms/navbarAtom";
 import { useAtom } from "jotai";
 
-const TresdPageMenu = ({ idioma }) => {
+const MyDevelopmentPageMenu = ({ idioma }) => {
 	return (
 		<MenuNavLayout
-			titulo={idioma === "es" ? "3D" : "3D"}
+			titulo={idioma === "es" ? "Mi Desarrollo" : "My Development"}
 			description={
 				idioma === "es"
-					? "Día Del Desarrollo"
-					: "Development Day"
+					? "Conoce nuestro Desarrollo"
+					: "Meet our development."
 			}
 		>
 			<div className={styles.container}>
-				{/* <LinkCustom
-					to={"/servicios"}
-					title={
-						idioma === "es" ? "Nuestros Servicios" : "Our Services"
-					}
-					description={
-						idioma === "es"
-							? "Conoce los servicios que ofrecemos a nuestros clientes."
-							: "Meet the services we offer to our customers."
-					}
-				/> */}
 				<LinkCustom
-					to={"/tresd/diplomado"}
+					to={"/desarrollo/graficos"} // agregar url
 					title={
 						idioma === "es"
-							? "Día Del Desarrollo"
-							: "Development Day"
+							? "Gráficos"
+							: "Graphics"
 					}
 					description={
 						idioma === "es"
-							? "Diplomado o especialización simulada sobre Desarrollo."
-							: "Diploma or simulated specialization in Development."
+							? "Descripción."
+							: "Description."
+					}
+				/>
+				<LinkCustom
+					to={"/desarrollo/regiones"} // agregar url
+					title={
+						idioma === "es"
+							? "Regiones graficos"
+							: "Graphics regions"
+					}
+					description={
+						idioma === "es"
+							? "Descripción."
+							: "Description."
 					}
 				/>
 			</div>
@@ -64,4 +66,4 @@ const LinkCustom = ({ to, icon, title, description }) => {
 	);
 };
 
-export default TresdPageMenu;
+export default MyDevelopmentPageMenu;

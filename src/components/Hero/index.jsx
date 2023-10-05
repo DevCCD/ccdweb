@@ -74,9 +74,10 @@ const HeroBanner = ({ idioma }) => {
 							<Button
 								as={"a"}
 								size={"lg"}
-								color={"primary"}
 								auto
+								className={styles.buttonContact}
 								href={`tel:+51${contactNumber}`}
+								outline
 							>
 								<PhoneIconFill
 									size={16}

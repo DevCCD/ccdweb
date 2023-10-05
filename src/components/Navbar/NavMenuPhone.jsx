@@ -5,6 +5,7 @@ import { useAtom } from "jotai";
 import { menuIndexPhoneAtom, menuNavPhoneAtom } from "../../atoms/navbarAtom";
 import NosotrosPageMenuPhone from "./pagesMenuPhone/NosotrosPageMenuPhone";
 import ServicePageMenuPhone from "./pagesMenuPhone/ServicePageMenuPhone";
+import MyDevelopmentPageMenuPhone from "./pagesMenuPhone/MyDevelopmentPageMenuPhone";
 
 const NavMenuPhone = ({ idioma, handleScroll }) => {
 	const [indexSlide, setIndexSlide] = useAtom(menuIndexPhoneAtom);
@@ -57,7 +58,7 @@ const NavMenuPhone = ({ idioma, handleScroll }) => {
 		},
 		{
 			component: (
-				<ServicePageMenuPhone
+				<MyDevelopmentPageMenuPhone
 					title={idioma === "es" ? "Mi Desarrollo" : "My Development"}
 					idioma={idioma}
 					setIndexSlide={setIndexSlide}

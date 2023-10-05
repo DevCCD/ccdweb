@@ -211,6 +211,15 @@
 	border-radius: 8px;
 	border: none;
 	padding: 4px 1.25rem;
+	/* border: 2px solid var(--primary-color);
+	background: transparent;
+	color: var(--primary-color); */
+	color: white;
+	background: var(--primary-color);
+	cursor: pointer;
+}
+
+.buttonContact {
 	border: 2px solid var(--primary-color);
 	background: transparent;
 	color: var(--primary-color);

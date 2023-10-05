@@ -202,7 +202,7 @@ const BrochureModal = () => {
 								</Button> */}
 								<Text className={styles.subtitle} size={15}>
 									{idioma === "es"
-										? "Adquiere una copia digital o física"
+										? "Adquiere información sobre nosotros en físico o digital y conoce todos los servicios que ofrecemos."
 										: "Get a digital or physical copy"}
 								</Text>
 								<div
@@ -229,7 +229,7 @@ const BrochureModal = () => {
 											}}
 										/>
 										{idioma === "es"
-											? "Conocenos más"
+											? "Conócenos más"
 											: "Know us more"}
 									</Button>
 									<Button

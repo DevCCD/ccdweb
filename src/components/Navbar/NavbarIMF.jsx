@@ -19,7 +19,7 @@ import { activeNavAtom } from "../../atoms/navbarAtom";
 import { ChevronDownIcon } from "../Icons/icons";
 import { socials } from "../../data";
 import { SearchIcon } from "../Icons/Interface";
-import TresdPageMenu from "./pagesMenu/TresdPageMenu";
+import MyDevelopmentPageMenu from "./pagesMenu/MyDevelopmentPageMenu";
 
 const NavbarIMF = ({ isTablet }) => {
 	const { theme, setTheme } = useNextTheme();
@@ -109,6 +109,13 @@ const NavbarIMF = ({ isTablet }) => {
 			url: "/servicios",
 			onMouseEnter: () =>
 				handleSlide("/servicios", <ServicePageMenu idioma={idioma} />),
+			onmouseleave: () => handleLeave(),
+		},
+		{
+			name: idioma === "es" ? "Mi Desarrollo" : "My Development",
+			url: "/desarrollo",
+			onMouseEnter: () =>
+				handleSlide("/desarrollo", <MyDevelopmentPageMenu idioma={idioma} />),
 			onmouseleave: () => handleLeave(),
 		},
 /* 		{
@@ -245,18 +252,6 @@ const NavbarIMF = ({ isTablet }) => {
 										</div>
 									</li>
 								))}
-								<li className={css.navItem}>
-									<div
-										onClick={() => {
-											handleScroll("midesarrollo");
-										}}
-										className={css.navLink}
-									>
-										{idioma === "es"
-											? "MiDesarrollo"
-											: "MyDevelopment"}
-									</div>
-								</li>
 								<li className={css.navItem}>
 									<div
 										onClick={() => {

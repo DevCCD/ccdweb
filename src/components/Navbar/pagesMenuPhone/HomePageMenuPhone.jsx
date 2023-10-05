@@ -31,6 +31,15 @@ const HomePageMenuPhone = ({ title, idioma, handleScroll }) => {
 					: "Services - What we do?",
 			description: "Conoce nuestros servicios",
 		},
+		//-------------------------------------
+		{
+			href: "desarrollo",
+			title:
+				idioma === "es"
+					? "Desarrollo"
+					: "Services - What we do?",
+			description: "Conoce nuestros servicios",
+		},
 		{
 			href: "contacto",
 			title:

@@ -159,10 +159,10 @@ const Navbar = ({ isTablet }) => {
 				<div className={styles.wrapperNav}>
 					<div className={styles.content}>
 						<div className={styles.left}>
-							<Link href={"/"} className={styles.logoCompact}>
+							{/* <Link href={"/"} className={styles.logoCompact}>
 								<BrandCCD height={42} />
-							</Link>
-							<button
+							</Link> */}
+							{/* <button
 								className={styles.btnNav}
 								style={{
 									padding: 0,
@@ -170,7 +170,7 @@ const Navbar = ({ isTablet }) => {
 								}}
 							>
 								<SearchIcon size={20} />
-							</button>
+							</button> */}
 						</div>
 						{!isTablet ? (
 							<ul className={styles.nav}>

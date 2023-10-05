@@ -103,7 +103,7 @@ const AboutSection = ({ idioma }) => {
 							<br />
 							<br />
 							{idioma === "es"
-								? "Nos enfocamos en la prestación de servicios que  comprenden los siguientes :"
+								? "Nos enfocamos en la prestación de servicios que  comprenden los siguientes:"
 								: "Focuses on the provision of services which include the following:"}
 						</p>
 						<div className={styles.list}>
@@ -143,8 +143,8 @@ const AboutSection = ({ idioma }) => {
 				</div>
 				<Text>
 					{idioma === "es"
-						? "Disponemos de un equipo conformado por profesionales con larga trayectoria en el sector público y con amplia experiencia en el diseño e implementación de políticas públicas."
-						: "We have a team made up of professionals with a long track record in the public sector and with extensive experience in the design and implementation of public policies."}
+						? "Nuestro equipo es conformado por profesionales  con más de 25 años de trayectoria en el sector público y privado,  con amplia experiencia en el diseño e implementación de políticas públicas."
+						: "Our team is made up of professionals with more than 25 years of experience in the public and private sectors, with extensive experience in the design and implementation of public policies."}
 				</Text>
 			</div>
 		</Section>

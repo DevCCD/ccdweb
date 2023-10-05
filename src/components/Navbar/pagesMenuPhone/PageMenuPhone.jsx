@@ -44,6 +44,10 @@ const PageMenuPhone = ({ title, setIndexSlide, handleScroll }) => {
 				setMenuPhone(false);
 			},
 		},
+		{
+			name: idioma === "es" ? "Mi Desarrollo" : "My Development",
+			onClick: () => setIndexSlide(4),
+		},
 	];
 
 	const openModalito = () => {
