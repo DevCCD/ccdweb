@@ -11,7 +11,7 @@ const NosotrosPageMenuPhone = ({ title, idioma }) => {
 			href: "/nosotros",
 			title:
 				idioma === "es"
-					? "Nosotros - ¿Quienes somos?"
+					? "Nosotros - ¿Quiénes somos?"
 					: "About us - Who are we?",
 			description:
 				idioma === "es"

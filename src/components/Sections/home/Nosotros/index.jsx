@@ -117,7 +117,7 @@ const NosotrosSection = ({ idioma }) => {
 								start={isMdScreen}
 								subtitle={
 									idioma === "es"
-										? "Quienes Somos"
+										? "Quiénes Somos"
 										: "Who we are"
 								}
 							>

@@ -66,7 +66,7 @@ const SwiperRecentArticles = ({ idioma }) => {
 				{
 					title:
 						idioma === "es"
-							? "Nosotros ¿Quienes Somos?"
+							? "Nosotros ¿Quiénes Somos?"
 							: "About us Who are we?",
 					description:
 						idioma === "es"

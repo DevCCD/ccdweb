@@ -19,7 +19,7 @@ const HomePageMenuPhone = ({ title, idioma, handleScroll }) => {
 			href: "nosotros",
 			title:
 				idioma === "es"
-					? "Nosotros - ¿Quienes somos?"
+					? "Nosotros - ¿Quiénes somos?"
 					: "About us - Who are we?",
 			description: "Conócenos más.",
 		},

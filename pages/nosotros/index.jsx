@@ -16,7 +16,7 @@ const NosotrosPage = () => {
 			title='Quiénes Somos Nosotros'
 			description='Conoce quiénes somos nosotros, nuestra gente, valores, compromiso y más.'
 		>
-			<HeaderBanner titleImage='Quienes Somos'>
+			<HeaderBanner titleImage='Quiénes Somos'>
 				<motion.div
 					className={styles.headerContainer}
 					initial={{ opacity: 0, y: 100 }}

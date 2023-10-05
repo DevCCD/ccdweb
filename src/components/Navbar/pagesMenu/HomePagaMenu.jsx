@@ -20,7 +20,7 @@ const HomePagaMenu = ({ idioma, handleScroll }) => {
 			href: "nosotros",
 			title:
 				idioma === "es"
-					? "Nosotros - ¿Quienes somos?"
+					? "Nosotros - ¿Quiénes somos?"
 					: "About us - Who are we?",
 			description: idioma === "es" ? "Conócenos más." : "Know us more.",
 		},
