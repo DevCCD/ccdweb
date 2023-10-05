@@ -111,13 +111,13 @@ const NavbarIMF = ({ isTablet }) => {
 				handleSlide("/servicios", <ServicePageMenu idioma={idioma} />),
 			onmouseleave: () => handleLeave(),
 		},
-		{
+		/* {
 			name: idioma === "es" ? "Mi Desarrollo" : "My Development",
 			url: "/desarrollo",
 			onMouseEnter: () =>
 				handleSlide("/desarrollo", <MyDevelopmentPageMenu idioma={idioma} />),
 			onmouseleave: () => handleLeave(),
-		},
+		}, */
 /* 		{
 			name: idioma === "es" ? "3D" : "3D",
 			url: "/tresd",
