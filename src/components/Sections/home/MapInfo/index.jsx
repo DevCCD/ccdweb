@@ -79,7 +79,7 @@ const MapInfoSection = ({ idioma }) => {
 									</div>
 								</div>
 							</Collapse>
-							<Collapse
+							{/* <Collapse
 								border
 								title={
 									idioma === "es"
@@ -88,8 +88,8 @@ const MapInfoSection = ({ idioma }) => {
 								}
 								isActive
 							>
-								hola
-							</Collapse>
+								Sede 2
+							</Collapse> */}
 						</div>
 					</div>
 				</div>
