@@ -15,10 +15,6 @@ const InversionesSection = ({ idioma }) => {
 
 	const talleresList = [
 		{
-			es: "Taller de obras por impuesto en: ",
-			en: "Workshop on tax work in: ",
-		},
-		{
 			es: "Sechura (Piura)",
 			en: "Sechura (Piura)",
 		},
@@ -116,7 +112,7 @@ const InversionesSection = ({ idioma }) => {
 							marginTop: "2rem",
 						}}
 					>
-						{idioma === "es" ? "Talleres" : "Workshops"}
+						{idioma === "es" ? "Taller de obras por impuesto" : "Workshop on tax work"}
 					</DualGrid.Title>
 					{talleresList.map((item, index) => (
 						<DualGrid.Item key={index}>
