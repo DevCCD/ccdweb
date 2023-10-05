@@ -15,8 +15,28 @@ const InversionesSection = ({ idioma }) => {
 
 	const talleresList = [
 		{
-			es: "Taller de obras por impuesto en: Sechura(Piura), Loreto, Apurímac, Echarati(Cusco) y La Convención(Cusco).",
-			en: "Workshop on tax work in: Sechura (Piura), Loreto, Apurímac, Echarati (Cusco) and La Convención (Cusco).",
+			es: "Taller de obras por impuesto en: ",
+			en: "Workshop on tax work in: ",
+		},
+		{
+			es: "Sechura (Piura)",
+			en: "Sechura (Piura)",
+		},
+		{
+			es: "Loreto",
+			en: "Loreto",
+		},
+		{
+			es: "Apurímac",
+			en: "Apurimac",
+		},
+		{
+			es: "Echarati (Cusco)",
+			en: "Echarati (Cusco)",
+		},
+		{
+			es: "La Convención (Cusco)",
+			en: "La Convencion (Cusco)",
 		},
 	];
 
