@@ -30,7 +30,7 @@ const MainLayout = ({ children, title, description }) => {
 					name='viewport'
 					content='width=device-width, initial-scale=1.0'
 				/>
-				<meta name='description' content='CCD PROJECT' />
+				<meta name='description' content='CCD WEB PAGE' />
 				<link rel='icon' href={favicon} />
 			</Head>
 			<NavbarCCD isTablet={isTablet} />
