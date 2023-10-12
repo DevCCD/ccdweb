@@ -70,7 +70,7 @@ const ContactenosForm = ({ idioma }) => {
 						required
 						aria-label='Nombre'
 						aria-labelledby='aria - Nombre'
-						placeholder='Nombre'
+						placeholder={idioma === "es" ? "Nombre" : "Name"}
 						name={"nombre"}
 						onChange={handleChange}
 						value={form.nombre}
@@ -83,7 +83,7 @@ const ContactenosForm = ({ idioma }) => {
 						required
 						aria-label='apellido'
 						aria-labelledby='aria - apellido'
-						placeholder='Apellidos'
+						placeholder={idioma === "es" ? "Apellidos" : "Last names"}
 						name={"apellido"}
 						onChange={handleChange}
 						value={form.apellido}
@@ -98,7 +98,7 @@ const ContactenosForm = ({ idioma }) => {
 						required
 						aria-label='Asunto'
 						aria-labelledby='aria - Asunto'
-						placeholder='Asunto'
+						placeholder={idioma === "es" ? "Asunto" : "Subject"}
 						name={"asunto"}
 						onChange={handleChange}
 						value={form.asunto}
@@ -108,7 +108,7 @@ const ContactenosForm = ({ idioma }) => {
 					<Textarea
 						aria-label='Mensaje'
 						aria-labelledby='aria - Mensaje'
-						placeholder='Mensaje'
+						placeholder={idioma === "es" ? "Mensaje" : "Message"}
 						bordered
 						color='primary'
 						borderWeight='light'
@@ -129,7 +129,7 @@ const ContactenosForm = ({ idioma }) => {
 						disabled={!isVoid}
 						// href={`mailto:${para}?subject=${form.nombre} ${form.apellido} - ${form.asunto}&body=${form.mensaje}`}
 					>
-						Enviar Mensaje
+						{idioma === "es" ? "Enviar Mensaje" : "Send Message"}
 					</Button>
 					<a
 						style={{ display: "none" }}
