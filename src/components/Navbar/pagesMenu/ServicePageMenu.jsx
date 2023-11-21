@@ -7,11 +7,11 @@ import { useAtom } from "jotai";
 const ServicePageMenu = ({ idioma }) => {
 	return (
 		<MenuNavLayout
-			titulo={idioma === "es" ? "Servicios" : "Services"}
+			titulo={idioma === "es" ? "Nuestro trabajo" : "Our work"}
 			description={
 				idioma === "es"
-					? "Conoce nuestros servicios."
-					: "Meet our services."
+					? ""
+					: ""
 			}
 		>
 			<div className={styles.container}>
@@ -30,7 +30,7 @@ const ServicePageMenu = ({ idioma }) => {
 					to={"/servicios/desarrollo-y-competitividad"}
 					title={
 						idioma === "es"
-							? "Desarrollo y Competitividad"
+							? "Competitividad y Desarrollo"
 							: "Development and Competitiveness"
 					}
 					description={
@@ -76,11 +76,11 @@ const ServicePageMenu = ({ idioma }) => {
 				/>
 				<LinkCustom
 					to={"/servicios/legal"}
-					title={idioma === "es" ? "Servicio Legal" : "Legal Service"}
+					title={idioma === "es" ? "Legal" : "Legal"}
 					description={
 						idioma === "es"
-							? "Administración política y pública, regulación, inversión y fondos sociales."
-							: "Political and public administration, regulation, investment and social funds."
+							? "Instrumentos innovadores para el desarrollo."
+							: "Innovative instruments for development."
 					}
 				/>
 			</div>

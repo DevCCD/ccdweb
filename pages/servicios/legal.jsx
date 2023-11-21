@@ -22,7 +22,7 @@ const LegalServicePage = () => {
 					}}
 				>
 					<h1 color='currentColor' className={styles.title}>
-						{idioma === "es" ? "Servicio Legal" : "Legal Service"}
+						{idioma === "es" ? "Legal" : "Legal"}
 					</h1>
 					<p color='currentColor' className={styles.parrafo}>
 						{idioma === "es"

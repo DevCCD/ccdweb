@@ -56,7 +56,7 @@ const MapInfoSection = ({ idioma }) => {
 											melissa.sanchez@competitividadccd.com
 										</a>
 									</div>
-									<div
+									{/* <div
 										className={styles.infoItem}
 										style={{ alignItems: "flex-start" }}
 									>
@@ -68,7 +68,7 @@ const MapInfoSection = ({ idioma }) => {
 											Aliaga N° 699 San Isidro, LIMA
 											(Lima)
 										</p>
-									</div>
+									</div> */}
 									<div className={styles.infoItem}>
 										<p className={styles.infoTitle}>
 											{idioma === "es"

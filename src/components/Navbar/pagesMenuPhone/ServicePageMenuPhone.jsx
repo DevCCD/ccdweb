@@ -11,7 +11,7 @@ const ServicePageMenuPhone = ({ title, idioma }) => {
 			href: "/servicios/desarrollo-y-competitividad",
 			title:
 				idioma === "es"
-					? "Desarrollo y Competitividad"
+					? "Competitividad y Desarrollo"
 					: "Development and Competitiveness",
 			description:
 				idioma === "es"

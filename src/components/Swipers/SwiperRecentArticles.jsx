@@ -110,7 +110,7 @@ const SwiperRecentArticles = ({ idioma }) => {
 				{
 					title:
 						idioma === "es"
-							? "Desarrollo y Competitividad"
+							? "Competitividad y Desarrollo"
 							: "Development and Competitiveness",
 					description:
 						idioma === "es"

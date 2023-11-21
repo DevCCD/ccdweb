@@ -11,7 +11,7 @@ const DyCompServicePage = () => {
 	const [idioma] = useAtom(idiomaAtom);
 
 	return (
-		<MainLayout title={"Servicio Desarrollo y Competitividad"}>
+		<MainLayout title={"Servicio Competitividad y Desarrollo"}>
 			<HeaderBanner>
 				<motion.div
 					className={styles.headerContainer}
@@ -24,13 +24,13 @@ const DyCompServicePage = () => {
 				>
 					<h1 color='currentColor' className={styles.title}>
 						{idioma === "es"
-							? "Desarrollo y Competitividad"
+							? "Competitividad y Desarrollo"
 							: "Development and Competitiveness"}
 					</h1>
 					<p color='currentColor' className={styles.parrafo}>
 						{idioma === "es"
-							? "Servicio de Alcance comunal, distrital, provincial y regional. Competitividad y planes de desarrollo. Instituciones Públicas y negocios , como sectores económicos."
-							: "Service of Communal, District, Provincial and Regional Reach. Competitiveness and development plans. Public Institutions and businesses, as economic sectors."}
+							? "Alcances comunal, distrital, provincial, regional, nacional e internacional."
+							: "Communal, District, Provincial and Regional Reach."}
 					</p>
 				</motion.div>
 			</HeaderBanner>

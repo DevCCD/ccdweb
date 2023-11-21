@@ -21,7 +21,7 @@ const ContactoSection = ({ idioma }) => {
 		},
 		{
 			icon: <BriefcaseIcon />,
-			title: idioma === "es" ? "Trabaje con Nosotros" : "Work with Us",
+			title: idioma === "es" ? "Trabaja con Nosotros" : "Work with Us",
 			onClick: () => handleTabClick(1),
 		},
 	];
@@ -39,13 +39,13 @@ const ContactoSection = ({ idioma }) => {
 						styleSubtitle={{ color: "white" }}
 						subtitle={
 							idioma === "es"
-								? "Expertos en el desarrollo y competitividad"
+								? "Expertos en competitividad y desarrollo"
 								: "Experts in development and competitiveness"
 						}
 					>
 						{idioma === "es"
-							? "Únete a Nosotros y vive la experiencia"
-							: "Join Us and live the experience"}
+							? "Únete a nosotros y vive la experiencia de la pasión por el desarrollo"
+							: "Join Us and live the experience of the development"}
 					</TitleSection>
 				</div>
 				<div className={styles.wrapper}>

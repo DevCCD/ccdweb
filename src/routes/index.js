@@ -16,7 +16,7 @@ export const routesPage = [
         onmouseleave: () => handleLeave(),
     },
     {
-        name: idioma === "es" ? "Servicios" : "Services",
+        name: idioma === "es" ? "Nuestro trabajo" : "Our work",
         url: "/servicios",
         onMouseEnter: () => handleSlide("/servicios", <NosotrosPageMenu />),
         onmouseleave: () => handleLeave(),

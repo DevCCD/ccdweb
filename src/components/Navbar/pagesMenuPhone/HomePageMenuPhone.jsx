@@ -27,8 +27,8 @@ const HomePageMenuPhone = ({ title, idioma, handleScroll }) => {
 			href: "servicios",
 			title:
 				idioma === "es"
-					? "Servicios - ¿Qué hacemos?"
-					: "Services - What we do?",
+					? "Nuestro trabajo - ¿Qué hacemos?"
+					: "Our work - What we do?",
 			description: "Conoce nuestros servicios",
 		},
 		//-------------------------------------
@@ -44,7 +44,7 @@ const HomePageMenuPhone = ({ title, idioma, handleScroll }) => {
 			href: "contacto",
 			title:
 				idioma === "es"
-					? "Contacto - trabaje con nosotros"
+					? "Contacto - trabaja con nosotros"
 					: "Contact - work with us",
 			description: "Ofrecemos grandes oportunidades laborales",
 		},

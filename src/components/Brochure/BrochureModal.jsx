@@ -113,8 +113,8 @@ const BrochureModal = () => {
 												className={styles.titleBrochure}
 											>
 												{idioma === "es"
-													? "Escanee el codigo QR para visualizar"
-													: "Scan the QR code to view"}
+													? "QR para visualizar"
+													: "QR code to view"}
 											</Text>
 											<div
 												className={styles.qr_container}
@@ -153,7 +153,7 @@ const BrochureModal = () => {
 								</div>
 							</div>
 							<div className={styles.modalBody_right}>
-								<Text
+								{/* <Text
 									className={styles.parrafo}
 									color='currentColor'
 									size={14}
@@ -169,7 +169,7 @@ const BrochureModal = () => {
 											the services we offer.
 										</>
 									)}
-								</Text>
+								</Text> */}
 								{/* <Text className={styles.subtitle} size={15}>
 									{idioma === "es"
 										? "Escanea el código QR"

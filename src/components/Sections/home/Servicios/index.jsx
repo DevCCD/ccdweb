@@ -93,7 +93,7 @@ const ServiciosSection = ({ idioma }) => {
 					<Servicio
 						title={
 							idioma === "es"
-								? "Desarrollo y Competitividad"
+								? "Competitividad y Desarrollo"
 								: "Development and Competitiveness"
 						}
 						image={`${cloudinary_url}service1_hxls8s`}

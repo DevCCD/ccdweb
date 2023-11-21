@@ -57,7 +57,7 @@ const Footer = ({ idioma }) => {
 		{
 			name:
 				idioma === "es"
-					? "Desarrollo y Competitividad"
+					? "Competitividad y Desarrollo"
 					: "Development and Competitiveness",
 			url: "/servicios/desarrollo-y-competitividad",
 		},
@@ -142,7 +142,7 @@ const Footer = ({ idioma }) => {
 						<div className={styles.twoSection}>
 							<div className={styles.quickServices}>
 								<Text className={styles.titleSection}>
-									{idioma === "es" ? "Servicios" : "Services"}
+									{idioma === "es" ? "Nuestro trabajo" : "Our Work"}
 								</Text>
 								<ul className={styles.list}>
 									{listServices.map((list, index) => (
