@@ -24,7 +24,7 @@ const HeroBanner = ({ idioma }) => {
 
 	const handleOpenModal = () => {
 		setIsOpen(true);
-		console.log("si me haces click ctmre");
+		console.log("si me haces click ctmre XD");
 	};
 
 	return (
@@ -90,7 +90,7 @@ const HeroBanner = ({ idioma }) => {
 					{lgScren && <GlobeLarge />}
 				</motion.div>
 			</div>
-
+			<BottomSection idioma={idioma}/>
 			{/* new */}
 			<div
 				style={{

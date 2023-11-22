@@ -27,7 +27,7 @@ const BottomSection = ({ idioma }) => {
 	}, [scrollY]);
 
 	const styleFooter = {
-		position: "sticky",
+		position: "hidden",
 		bottom: 0,
 	};
 
