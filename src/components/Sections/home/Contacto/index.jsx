@@ -16,7 +16,7 @@ const ContactoSection = ({ idioma }) => {
 	const tabs = [
 		{
 			icon: <MailFillIcon />,
-			title: idioma === "es" ? "Contáctenos" : "Contact Us",
+			title: idioma === "es" ? "Contáctanos" : "Contact Us",
 			onClick: () => handleTabClick(0),
 		},
 		{

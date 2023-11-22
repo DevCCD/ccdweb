@@ -20,7 +20,7 @@
 	position: relative;
 	width: 100%;
 	height: 95%;
-	min-height: 320px;
+	min-height: 470px;
 	border-radius: 8px;
 	overflow: hidden;
 	background-color: #eee;
@@ -67,7 +67,7 @@
 	}
 	.servicioImage {
 		width: 92%;
-		max-width: 560px;
+		max-width: 680px;
 	}
 
 	.servicio.reverse {

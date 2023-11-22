@@ -16,7 +16,7 @@ const HomePage = () => {
 	return (
 		<MainLayout>
 			<Hero idioma={idioma} />
-			<NosotrosSection idioma={idioma} />
+			{/* <NosotrosSection idioma={idioma} /> */}
 			<ServiciosSection idioma={idioma} />
 			<ContactoSection idioma={idioma} />
 			{/* <TestimonialsSection idioma={idioma} /> */}

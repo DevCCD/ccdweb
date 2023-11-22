@@ -101,18 +101,48 @@ const ServiciosSection = ({ idioma }) => {
 					>
 						<Description>
 							{idioma === "es"
-								? "Alcance comunal, distrital, provincial y regional."
-								: "Community, district, provincial and regional reach."}
+								? "Visión y productividad."
+								: "Vision and productivity."}
 						</Description>
 						<Description>
 							{idioma === "es"
-								? "Competitividad y planes de desarrollo."
-								: "Competitiveness and development plans."}
+								? "Cierre de brechas, KPIs y calidad de vida de personas."
+								: "Closing gaps, KPIs and quality of life of people."}
 						</Description>
 						<Description>
 							{idioma === "es"
-								? "Instituciones Públicas y negocios , como sectores económicos."
-								: "Public institutions and businesses, as economic sectors."}
+								? "Educación, salud, infraestructura, cadenas productivas y clústers, emprendimientos, calidad de instituciones y dotación de recursos naturales."
+								: "Education, health, infrastructure, productive chains and clusters, entrepreneurship, quality of institutions and provision of natural resources."}
+						</Description>
+						<Description>
+							{idioma === "es"
+								? "Potencialidades y vectores de valor."
+								: "Potentialities and vectors of value."}
+						</Description>
+						<Description>
+							{idioma === "es"
+								? "Intervenciones programas y proyectos."
+								: "Interventions programs and projects."}
+						</Description>
+						<Description>
+							{idioma === "es"
+								? "Medición de intervenciones: pertinencia, eficacia, eficiencia, impacto y sostenibilidad."
+								: "Measurement of interventions: relevance, effectiveness, efficiency, impact and sustainability."}
+						</Description>
+						<Description>
+							{idioma === "es"
+								? "Corredores económicos, sinergias y economías de escala en el desarrollo."
+								: "Economic corridors, synergies and economies of scale in development."}
+						</Description>
+						<Description>
+							{idioma === "es"
+								? "Escala comunal, distrital, provincial o regional."
+								: "Communal, district, provincial or regional scale."}
+						</Description>
+						<Description>
+							{idioma === "es"
+								? "Planificación y gestión de la competitividad y el desarrollo."
+								: "Planning and management of competitiveness and development."}
 						</Description>
 					</Servicio>
 					<Servicio

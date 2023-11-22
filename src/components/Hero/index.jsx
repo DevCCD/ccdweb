@@ -54,8 +54,8 @@ const HeroBanner = ({ idioma }) => {
 						</Text>
 						<Text color='currentColor' className={styles.parrafo}>
 							{idioma === "es"
-								? "Promovemos el desarrollo sostenible en base al principio de la competitividad con el objetivo de mejorar la calidad de vida de los ciudadanos."
-								: "We promote sustainable development based on the principle of competitiveness with the aim of improving the quality of life of citizens."}
+								? "Promovemos el desarrollo sostenible en base al principio de la competitividad para mejorar la calidad de vida de las personas"
+								: "We promote sustainable development based on the principle of competitiveness with the aim of improving the quality of life of people."}
 						</Text>
 						<div className={styles.buttons}>
 							<motion.button
@@ -76,7 +76,7 @@ const HeroBanner = ({ idioma }) => {
 								size={"lg"}
 								auto
 								className={styles.buttonContact}
-								href={`tel:+51${contactNumber}`}
+								href={`#contacto`}
 								outline
 							>
 								<PhoneIconFill
