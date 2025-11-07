@@ -49,8 +49,8 @@ const HeroBanner = ({ idioma }) => {
 					>
 						<Text color='currentColor' className={styles.title} h1>
 							{idioma === "es"
-								? "Centro para la Competitividad y el Desarrollo"
-								: "Center for Competitiveness and Development"}
+								? "Centro para la Competitividad y el Desarrollo - TEST"
+								: "Center for Competitiveness and Development - TEST"}
 						</Text>
 						<Text color='currentColor' className={styles.parrafo}>
 							{idioma === "es"
